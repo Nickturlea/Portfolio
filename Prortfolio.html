@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center; 
+}
+
+.left-hand-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  border: darkgoldenrod solid;
+  color: white;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  font-size: 24px;
+  font-weight: bold; 
+  color: darkgoldenrod; 
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.menu-item + .menu-item {
+  margin-top: 10px;
+}
+
+  .menu-item:hover {
+    background-color: brown;
+  }
+
+  .container {
+    margin-left: 200px; 
+
+  }
+
+.logo {
+  color: darkgoldenrod;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 8px; 
+}
+
+.subtext {
+  color: #aaa;
+  margin-bottom: 32px; 
+}
+
+.contact {
+  background: darkgoldenrod;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px; 
+  border: none;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: brown; 
+}
+
+.social-links {
+  margin-top: 64px; 
+}
+
+.social-links a {
+  color: #888;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: white;
+}
+  </style>
+
+</head>
+<body>
+  <div class="left-hand-menu">
+    <a href="Prortfolio.html" class="menu-item">Home</a>
+    <a href="About.html" class="menu-item">About Me</a>
+    <a href="Projects.html" class="menu-item">Projects</a>
+  </div>
+<div class="container">
+  <div class="logo">NT</div>
+  <h1>Hi, I'm Nicholas Turlea, <br>Software Developer and UI Designer</h1>
+  <p class="subtext">Full stack Developer with a focus on Front End</p>
+  <a href="mailto:nickturlea@gmail.com" class="contact">Contact me!</a>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/nicholas-turlea-b42809261/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Nickturlea">GitHub</a>
+    <a href="https://discord.com/users/mealofdeal#5777" target="_blank">Discord</a>
+  </div>
+</div>
+</body>
+</html>

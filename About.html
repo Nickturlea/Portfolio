@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Align to the right */
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10%;
+}
+
+
+.left-hand-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  border: darkgoldenrod solid;
+  color: white;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  font-size: 24px;
+  font-weight: bold; 
+  color: darkgoldenrod; 
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.menu-item + .menu-item {
+  margin-top: 10px;
+}
+
+  .menu-item:hover {
+    background-color: brown;
+  }
+
+  h1 {
+  font-size: 36px;
+  margin: 0 0 20px 0; /* Added margin to create space below the heading */
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+  max-width: 600px; /* Limit the width of the text for readability */
+}
+</style>
+
+</head>
+<body>
+  <img src="Profile.png" alt="Your Image">
+
+
+  <div class="left-hand-menu">
+    <a href="Prortfolio.html" class="menu-item">Home</a>
+    <a href="About.html" class="menu-item">About Me</a>
+    <a href="Projects.html" class="menu-item">Projects</a>
+  </div>
+
+  <div>
+  <h1>About me</h1>
+  <p>Hi, I'm Nicholas Turlea. Second-year programming and analysis student at Conestoga College. Always been really interested in computers and programming 
+    diverse applications and websites to be implemented in today's world. I have been placed in co-op recently and am looking forward to starting my term in the spring term (2024).
+  </p>
+
+  <p>
+    I find passion and interest in working on hard tasks that take time to complete and integrate. I have always been interested in computers as a kid, I would try and mod and create 
+    scripts for games for fun. 
+  </p>
+
+  <p>
+    Throughout my years as a student, I have developed a good amount of knowledge in HTML, CSS, JavaScript, C#, SQL, Microsoft Access, minor Linux and Microsoft web knowledge, MongoDB 
+    database experience and ASP.Net. My main strengths being, HTML, CSS, Javascript, MongoDB and C#.
+  </p>
+</div>
+</body>
+</html>
