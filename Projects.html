@@ -1,118 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #111;
-  color: lightgrey;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  min-height: 100vh;
-  position: relative; 
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            min-height: 100vh;
+            position: relative;
+        }
 
-/* Add a container for the content to not overlap the menu */
-.content {
-  flex-grow: 1;
-  padding-left: 220px; /* Adjusted to avoid overlap with the menu */
-}
+        .content {
+            margin-left: 200px; 
+            width: calc(100% - 200px); 
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
 
-.projects {
-  border: grey solid;
-  padding: 5px;
-  margin: 0 10px;
-}
+        .projects {
+            border: grey solid;
+            padding: 5px;
+            margin: 0 5px;
+        }
 
-h2 {
-  text-decoration: underline;
-}
+        h3 {
+            text-decoration: underline;
+        }
 
-.left-hand-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
-  background-color: #333;
-  border: darkgoldenrod solid;
-  color: white;
-  padding: 20px 0;
-  box-sizing: border-box;
-  z-index: 1000; /* Ensures the menu is above other content */
-}
+        .left-hand-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            border: darkgoldenrod solid;
+            color: white;
+            padding: 20px 0;
+            box-sizing: border-box;
+            z-index: 1000; 
+        }
 
-.menu-item {
-  font-size: 24px;
-  font-weight: bold; 
-  color: darkgoldenrod; 
-  padding: 10px 20px;
-  text-decoration: none;
-  display: block; /* Makes sure the link takes up the entire line */
-  text-align: center; /* Centers the text within the link */
-}
+        .menu-item {
+            font-size: 24px;
+            font-weight: bold;
+            color: darkgoldenrod;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block; 
+            text-align: center; 
+        }
 
-.menu-item + .menu-item {
-  margin-top: 10px;
-}
 
-.menu-item:hover {
-  background-color: brown;
-}
+            .menu-item:hover {
+                background-color: brown;
+            }
 
-</style>
+        @media (max-width: 700px) {
+            .left-hand-menu {
+                flex-direction: row;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto; 
+                padding: 10px 0; 
+                justify-content: space-around; 
+                z-index: 1000; 
+            }
+
+            .menu-item {
+                font-size: 18px; 
+                padding: 5px 10px; 
+            }
+
+            .content {
+                margin-top: 50px; 
+                margin-left: 0; 
+                padding: 10px; 
+                width: auto; 
+                box-sizing: border-box; 
+            }
+
+            .projects {
+                margin: 10px 5px; 
+            }
+        }
+    </style>
 
 </head>
 <body>
-<div class="left-hand-menu">
-    <a href="index.html" class="menu-item">Home</a>
-    <a href="About.html" class="menu-item">About Me</a>
-    <a href="Projects.html" class="menu-item">Projects</a>
-  </div>
+    <div class="left-hand-menu">
+        <a href="Prortfolio.html" class="menu-item">Home</a>
+        <a href="About.html" class="menu-item">About Me</a>
+        <a href="Projects.html" class="menu-item">Projects</a>
+    </div>
 
-  <div class="content">
-    <h3>Projects</h3>
-<div class="projects">
-<h4>Angry Birds Game</h4>
-<p>This mini game is developed as a shooter based response game. You are tasked with shooting a bird at different objects with different points 
-    based on size and movement. The bird being launched includes a speed bar for the user to determine the speed of their bird and a semicircular shooting area where the user can choose in 
-    which direction the bird will be flying. The main goal of the game is to knock as many objects as you can with the given 3 birds.
-    Level 1 consists of a easier level with bigger shooting birds, more points on objects and no moving objects.
-    Level 2 consists of a harder level with smaller shooting birds, less points on objects and a final boss that moves and taunts you.
-    The game tests your hand eye perception and coordination while providing a nice calm game to play around with and get the highest score.
-</p>
-    *Created using Monogame, Visual Studio, C#, Github.<div></div>
-    *This project included one other colaborator named Samuel Estrada.
-</div>
+    <div class="content">
+        <h3>Projects</h3>
+        <div class="projects">
+            <h4>Angry Birds Game</h4>
+            <p>
+                This mini game is developed as a shooter based response game. You are tasked with shooting a bird at different objects with different points
+                based on size and movement. The bird being launched includes a speed bar for the user to determine the speed of their bird and a semicircular shooting area where the user can choose in
+                which direction the bird will be flying. The main goal of the game is to knock as many objects as you can with the given 3 birds.
+                Level 1 consists of a easier level with bigger shooting birds, more points on objects and no moving objects.
+                Level 2 consists of a harder level with smaller shooting birds, less points on objects and a final boss that moves and taunts you.
+                The game tests your hand eye perception and coordination while providing a nice calm game to play around with and get the highest score.
+            </p>
+            *Created using Monogame, Visual Studio, C#, Github.<div></div>
+            *This project included one other colaborator named Samuel Estrada.
+            <div></div>
+            <a href="https://github.com/Nickturlea/AngryBirds" target="_blank">GitHub Repository</a>
+        </div>
 
-<div class="projects">
-<h4>Teacher Class Application System</h4>
-<p>This application is a data tracking and organization tool. It consists of various classes, teachers, students and confirmation managment systems to manage 
-    a small scale schooling system to assign a teacher to a class and the students along with it. It uses a database to store all the data, uses cookies to 
-    display welcome times and has a email send confirmation page to confirm enrollment of a student.
-</p>
-*Created using Visual Studio, Asp-Net and Model-View-Controller, Sql database.<div></div>
-*This project was done alone.
-</div>
+        <div class="projects">
+            <h4>Teacher Class Application System</h4>
+            <p>
+                This application is a data tracking and organization tool. It consists of various classes, teachers, students and confirmation managment systems to manage
+                a small scale schooling system to assign a teacher to a class and the students along with it. It uses a database to store all the data, uses cookies to
+                display welcome times and has a email send confirmation page to confirm enrollment of a student.
+            </p>
+            *Created using Visual Studio, Asp-Net and Model-View-Controller, Sql database.<div></div>
+            *This project was done alone.
+            <div></div>
+            <a href="https://github.com/Nickturlea/TeacherStudentApp" target="_blank">GitHub Repository</a>
+        </div>
 
-<div class="projects">
-<h4>Tic-Tac-Toe Game</h4>
-<p>This mini game consists of a basic Tic-Tac-Toe two player game, one person clicks to start off with X and alternate turns clicking on the boxes they
-    assign, getting 3 in a row displays a win message and then prompts to restart game and play again. Its a simple yet fun to play two plyer game on one
-    console.
-</p>
-*Created using Visual Studio, C#, Windows Forms Asp.<div></div>
-*This project was done alone.
-</div>
-</div>
+        <div class="projects">
+            <h4>Tic-Tac-Toe Game</h4>
+            <p>
+                This mini game consists of a basic Tic-Tac-Toe two player game, one person clicks to start off with X and alternate turns clicking on the boxes they
+                assign, getting 3 in a row displays a win message and then prompts to restart game and play again. Its a simple yet fun to play two plyer game on one
+                console.
+            </p>
+            *Created using Visual Studio, C#, Windows Forms Asp.<div></div>
+            *This project was done alone.
+            <div></div>
+            <a href="https://github.com/Nickturlea/Tic-Tac-Toe-Game" target="_blank">GitHub Repository</a>
+        </div>
+    </div>
 </body>
 </html>
