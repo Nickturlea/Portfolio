@@ -1,0 +1,122 @@
+.about {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #033b20, #111, #0a0a0a);
+  color: var(--text-main);
+  text-align: center;
+  animation: fadeInPage 1s ease-in;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.highlight {
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button,
+.outline {
+  padding: 0.85rem 1.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 255, 136, 0.15);
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--primary-green);
+  color: black;
+}
+
+.button:hover {
+  background-color: var(--primary-green-dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+.outline:hover {
+  background-color: var(--primary-green);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.back-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back-button:hover {
+  background-color: var(--primary-green);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+.delay-4 { animation-delay: 1.6s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

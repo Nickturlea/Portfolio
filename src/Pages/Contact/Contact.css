@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #033b20, #111, #0a0a0a);
+  color: var(--text-main);
+  text-align: center;
+  animation: fadeInPage 1s ease-in;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+.email-plain {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  margin-top: 0.5rem;
+  user-select: all;
+}
+.contact .email-plain {
+  color: var(--primary-green);
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.email-link:hover {
+  color: var(--primary-green-dark);
+  transform: translateY(-2px);
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  color: var(--primary-green-dark);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+.back-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back-button:hover {
+  background-color: var(--primary-green);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

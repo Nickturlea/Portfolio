@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeInPage 1s ease-in;
+
+  background: radial-gradient(circle at 20% 30%, #042816 0%, #111 40%, #0a0a0a 100%);
+}
+
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: var(--primary-green);
+}
+
+.name {
+  color: white;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.description {
+  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+}
+
+.highlight {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+.values li {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button,
+.outline {
+  padding: 0.85rem 1.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 255, 136, 0.15);
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--primary-green);
+  color: black;
+}
+
+.button:hover {
+  background-color: var(--primary-green-dark);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+.outline:hover {
+  background-color: var(--primary-green);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+.delay-4 { animation-delay: 1.6s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+}
+.gradient-name {
+  background: linear-gradient(90deg, #ffffff, var(--primary-green), var(--primary-green-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
