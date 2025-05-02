@@ -11,7 +11,7 @@ export default function Home() {
 
 
       <p className="tagline fade-in delay-1">
-        Turning code into fun a powerful experience.
+        Turning code into a fun and powerful experience.
       </p>
 
       <p className="description fade-in delay-2">
